@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --backgrond: #000;
+  --text-color: #FFF;
+  --button: #8257E5;
+  --border: #29292E;
+  --border-menu-mobile: #A8A8B3;
+  --text-color-menu-mobile: #E1E1E6;
+  --width-home: 36.8px
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  max-height: 100vh;
+  background-color: var(--backgrond);
+  color: var(--text-color);
+  font-family: 'Manrope', sans-serif;
+  overflow: hidden;
+}
+
+#mobile-header {
+  display: none;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  margin-left: 50px;
+  font-size: 0.85em;
+  z-index: 99;
+}
+
+#desktop-header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  margin-left: 50px;
+  font-size: 0.85em;
+  z-index: 99;
+}
+
+.into-header-desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 65%;
+  gap: 20px;
+}
+
+.desktop-logo {
+  height: 50px;
+  width: 43px;
+}
+
+#desktop-menu {
+  max-width: 47%;
+  height: 50px;
+  margin-left: 45px;
+}
+
+#nav-list-desktop {
+  display: flex;
+  height: 100%;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  color: #737380;
+}
+
+.desktop-navigator-home {
+  padding: 16px 0;
+  cursor: pointer;
+  transition: all .2s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.desktop-navigators {
+  padding: 16px 0;
+  margin-left: 35px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all .2s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.desktop-button-coffe {
+  background-color: transparent;
+  color: var(--text-color);
+  border: 0.5px solid var(--button);
+  border-radius: 8px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.80em;
+  text-align: center;
+  padding: 10px 0px;
+  width: 175px;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+#front-main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#box-title {
+  margin-top: 40px;
+  padding-right: 35px;
+  font-size: 70px;
+}
+
+.title-coffe {
+  text-align: center;
+  height: 70px;
+}
+
+.title-stroke {
+  color: var(--backgrond);
+  text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+
+  text-align: center;
+}
+
+#coffe-image {
+  padding-right: 35px;
+}
+
+.cups {
+  height: 345px
+}
+
+#side-left {
+  height: 100%;
+  align-self: flex-start;
+  position: absolute;
+
+}
+
+.blur-1 {
+  height: 100%;
+  width: 80%;
+}
+
+#side-rigth {
+  height: 100%;
+  align-self: flex-end;
+  position: absolute;
+}
+
+.blur-2 {
+  height: 100%;
+}
